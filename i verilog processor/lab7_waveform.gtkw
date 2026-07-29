@@ -1,0 +1,41 @@
+[*]
+[*] GTKWave save file for CO2070 Lab 7
+[*] Load with: gtkwave cpu_wavedata.vcd lab7_waveform.gtkw
+[*]
+[dumpfile] "cpu_wavedata.vcd"
+[timestart] 0
+[size] 1280 800
+[pos] -1 -1
+@28
+cpu_tb.CLK
+cpu_tb.RESET
+@22
+cpu_tb.PC[31:0]
+cpu_tb.INSTRUCTION[31:0]
+@28
+cpu_tb.INST_BUSYWAIT
+cpu_tb.my_instruction_cache.hit
+@22
+cpu_tb.my_instruction_cache.state[1:0]
+cpu_tb.IMEM_ADDRESS[5:0]
+@28
+cpu_tb.IMEM_READ
+cpu_tb.IMEM_BUSYWAIT
+@22
+cpu_tb.my_instruction_cache.tag[2:0]
+cpu_tb.my_instruction_cache.index[2:0]
+cpu_tb.my_instruction_cache.word_offset[1:0]
+@22
+cpu_tb.mycpu.my_reg_file.R1_DEBUG[7:0]
+cpu_tb.mycpu.my_reg_file.R2_DEBUG[7:0]
+cpu_tb.mycpu.my_reg_file.R3_DEBUG[7:0]
+cpu_tb.mycpu.my_reg_file.R4_DEBUG[7:0]
+@28
+cpu_tb.MEM_READ
+cpu_tb.MEM_WRITE
+cpu_tb.MEM_BUSYWAIT
+@22
+cpu_tb.MEM_ADDRESS[7:0]
+cpu_tb.MEM_WRITEDATA[7:0]
+cpu_tb.my_data_cache.state[2:0]
+[pattern_trace] 1
